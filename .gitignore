@@ -1,1 +1,9 @@
 .DS_Store
+node_modules/
+.env
+*.log
+.vscode/
+*.bak
+*.tmp
+thumbs.db
+Thumbs.db
