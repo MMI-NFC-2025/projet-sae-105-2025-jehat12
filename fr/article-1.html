@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portrait de Tu Youyou - Une vie dédiée à la science et à l'humanité">
+  <meta name="keywords" content="Tu Youyou, Prix Nobel, artémisinine, malaria, paludisme, médecine traditionnelle chinoise">
+  <meta name="author" content="Jehat Bakiray">
+  <title>Portrait de Tu Youyou | Tu Youyou Tribute</title>
+  
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600;700;900&family=IBM+Plex+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      font-family: 'Crimson Pro', Georgia, serif;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #3A3632;
+      background: #F5F1E8;
+      background-image: 
+        repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.02) 2px, rgba(0,0,0,0.02) 4px),
+        repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(0,0,0,0.01) 2px, rgba(0,0,0,0.01) 4px);
+      overflow-x: hidden;
+    }
+    
+    /* ============ HEADER ============ */
+    .header {
+      position: sticky;
+      top: 0;
+      background: linear-gradient(180deg, #EDE7D9 0%, #F5F1E8 100%);
+      border-bottom: 3px solid #3A3632;
+      padding: 20px 40px;
+      z-index: 1000;
+      box-shadow: 0 4px 0 rgba(26, 24, 22, 0.1), 0 8px 16px rgba(26, 24, 22, 0.05);
+    }
+    
+    .header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 8px;
+      background: #F5F1E8;
+      clip-path: polygon(0% 100%, 1% 0%, 2% 100%, 3% 0%, 4% 100%, 5% 0%, 6% 100%, 7% 0%, 8% 100%, 9% 0%, 10% 100%, 11% 0%, 12% 100%, 13% 0%, 14% 100%, 15% 0%, 16% 100%, 17% 0%, 18% 100%, 19% 0%, 20% 100%, 21% 0%, 22% 100%, 23% 0%, 24% 100%, 25% 0%, 26% 100%, 27% 0%, 28% 100%, 29% 0%, 30% 100%, 31% 0%, 32% 100%, 33% 0%, 34% 100%, 35% 0%, 36% 100%, 37% 0%, 38% 100%, 39% 0%, 40% 100%, 41% 0%, 42% 100%, 43% 0%, 44% 100%, 45% 0%, 46% 100%, 47% 0%, 48% 100%, 49% 0%, 50% 100%, 51% 0%, 52% 100%, 53% 0%, 54% 100%, 55% 0%, 56% 100%, 57% 0%, 58% 100%, 59% 0%, 60% 100%, 61% 0%, 62% 100%, 63% 0%, 64% 100%, 65% 0%, 66% 100%, 67% 0%, 68% 100%, 69% 0%, 70% 100%, 71% 0%, 72% 100%, 73% 0%, 74% 100%, 75% 0%, 76% 100%, 77% 0%, 78% 100%, 79% 0%, 80% 100%, 81% 0%, 82% 100%, 83% 0%, 84% 100%, 85% 0%, 86% 100%, 87% 0%, 88% 100%, 89% 0%, 90% 100%, 91% 0%, 92% 100%, 93% 0%, 94% 100%, 95% 0%, 96% 100%, 97% 0%, 98% 100%, 99% 0%, 100% 100%);
+    }
+    
+    .header__container {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .header__logo {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      text-decoration: none;
+      color: #3A3632;
+      transition: transform 0.3s ease;
+    }
+    
+    .header__logo:hover {
+      transform: translateY(-3px) rotate(-1deg);
+    }
+    
+    .header__logo-icon {
+      width: 60px;
+      height: 60px;
+      border: 3px dashed #B85C38;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      font-weight: 900;
+      color: #B85C38;
+      transform: rotate(-5deg);
+      opacity: 0.8;
+      background: rgba(184, 92, 56, 0.03);
+    }
+    
+    .header__logo-text {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    
+    .header__logo-text-accent {
+      color: #B85C38;
+    }
+    
+    .header__burger {
+      width: 50px;
+      height: 50px;
+      background: #F5F1E8;
+      border: 2px solid #3A3632;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: all 0.3s ease;
+      box-shadow: 3px 3px 0 rgba(58, 54, 50, 0.15);
+    }
+    
+    .header__burger:hover {
+      background: #D4C5B0;
+      transform: rotate(8deg) scale(1.05);
+    }
+    
+    .header__burger-line {
+      width: 26px;
+      height: 3px;
+      background: #3A3632;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+    
+    /* ============ NAVIGATION ============ */
+    .nav-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(26, 24, 22, 0.7);
+      backdrop-filter: blur(8px);
+      z-index: 999;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+    
+    .nav-overlay--visible {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    .nav {
+      position: fixed;
+      top: 0;
+      right: -400px;
+      width: 400px;
+      max-width: 90vw;
+      height: 100vh;
+      background: linear-gradient(135deg, #EDE7D9 0%, #F5F1E8 100%);
+      border-left: 3px solid #3A3632;
+      padding: 100px 40px 40px;
+      z-index: 1001;
+      overflow-y: auto;
+      transition: right 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+      box-shadow: -8px 0 24px rgba(0, 0, 0, 0.15);
+    }
+    
+    .nav--visible {
+      right: 0;
+    }
+    
+    .nav__list {
+      list-style: none;
+      margin-bottom: 40px;
+    }
+    
+    .nav__item {
+      margin-bottom: 8px;
+    }
+    
+    .nav__link {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 20px;
+      font-family: 'Inter', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #3A3632;
+      text-decoration: none;
+      border: 2px solid transparent;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+    
+    .nav__link:hover {
+      background: rgba(184, 92, 56, 0.1);
+      border-color: #B85C38;
+      transform: translateX(8px);
+    }
+    
+    .nav__number {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 14px;
+      color: #B85C38;
+      opacity: 0.7;
+    }
+    
+    /* ============ BACK BUTTON ============ */
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      margin: 40px;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: #3A3632;
+      text-decoration: none;
+      background: #EDE7D9;
+      border: 2px solid #3A3632;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      box-shadow: 3px 3px 0 rgba(58, 54, 50, 0.15);
+    }
+    
+    .back-link:hover {
+      background: #B85C38;
+      color: #FFFFFF;
+      transform: translate(-2px, -2px);
+      box-shadow: 5px 5px 0 rgba(58, 54, 50, 0.2);
+    }
+    
+    /* ============ ARTICLE PAGE ============ */
+    .article-page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 40px 80px;
+    }
+    
+    /* ============ HERO IMAGE ============ */
+    .article-hero {
+      position: relative;
+      margin-bottom: 60px;
+    }
+    
+    .article-hero__image {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border: 8px solid #FFFFFF;
+      box-shadow: 
+        0 0 0 1px rgba(0, 0, 0, 0.1),
+        8px 8px 0 rgba(58, 54, 50, 0.12),
+        16px 16px 32px rgba(0, 0, 0, 0.1);
+      filter: sepia(0.1) contrast(1.05);
+    }
+    
+    .article-hero__caption {
+      position: absolute;
+      bottom: -20px;
+      left: 30px;
+      background: #FEF5B7;
+      padding: 16px 24px;
+      border: 2px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+      transform: rotate(-2deg);
+    }
+    
+    .article-hero__caption-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #1A1816;
+      margin-bottom: 4px;
+    }
+    
+    .article-hero__caption-text {
+      font-family: 'Crimson Pro', serif;
+      font-size: 14px;
+      color: #6B6760;
+    }
+    
+    /* ============ ARTICLE INTRO ============ */
+    .article-intro {
+      background: #FFFFFF;
+      border: 3px solid #3A3632;
+      border-radius: 8px;
+      padding: 30px;
+      margin-bottom: 50px;
+      box-shadow: 6px 6px 0 rgba(58, 54, 50, 0.1);
+      transform: rotate(-0.5deg);
+    }
+    
+    .article-intro p {
+      font-family: 'Crimson Pro', serif;
+      font-size: 20px;
+      line-height: 1.8;
+      color: #3A3632;
+    }
+    
+    /* ============ ARTICLE SECTIONS ============ */
+    .article-section {
+      margin-bottom: 50px;
+    }
+    
+    .article-section__image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border: 6px solid #FFFFFF;
+      box-shadow: 
+        0 0 0 1px rgba(0, 0, 0, 0.1),
+        6px 6px 0 rgba(58, 54, 50, 0.1);
+      filter: sepia(0.1) contrast(1.05);
+      margin-bottom: 30px;
+    }
+    
+    .article-section__content {
+      background: #FFFFFF;
+      border: 3px solid #3A3632;
+      border-radius: 8px;
+      padding: 30px;
+      position: relative;
+      box-shadow: 6px 6px 0 rgba(58, 54, 50, 0.1);
+    }
+    
+    .article-section__number {
+      position: absolute;
+      top: -15px;
+      left: 25px;
+      width: 40px;
+      height: 40px;
+      background: #B85C38;
+      color: #FFFFFF;
+      border: 3px solid #3A3632;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 16px;
+      font-weight: 700;
+      box-shadow: 3px 3px 0 rgba(58, 54, 50, 0.2);
+    }
+    
+    .article-section__title {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: #1A1816;
+      margin-bottom: 16px;
+      margin-top: 10px;
+    }
+    
+    .article-section__text {
+      font-family: 'Crimson Pro', serif;
+      font-size: 18px;
+      line-height: 1.8;
+      color: #3A3632;
+    }
+    
+    /* ============ QUOTE ============ */
+    .article-quote {
+      background: #B85C38;
+      color: #FFFFFF;
+      border: 3px solid #3A3632;
+      border-radius: 8px;
+      padding: 40px;
+      margin: 60px 0;
+      transform: rotate(-1deg);
+      box-shadow: 6px 6px 0 rgba(58, 54, 50, 0.2);
+    }
+    
+    .article-quote p {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-style: italic;
+      line-height: 1.6;
+    }
+    
+    /* ============ CTA - À LIRE ÉGALEMENT ============ */
+    .article-cta {
+      background: #FFFFFF;
+      border: 3px solid #3A3632;
+      border-radius: 8px;
+      padding: 30px;
+      margin-top: 60px;
+      box-shadow: 6px 6px 0 rgba(58, 54, 50, 0.1);
+    }
+    
+    .article-cta__label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      letter-spacing: 2px;
+      color: #B85C38;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .article-cta__link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 350px;
+      padding: 16px 24px;
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: #3A3632;
+      text-decoration: none;
+      background: #EDE7D9;
+      border: 2px solid #3A3632;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      box-shadow: 3px 3px 0 rgba(58, 54, 50, 0.15);
+    }
+    
+    .article-cta__link:hover {
+      background: #B85C38;
+      color: #FFFFFF;
+      transform: translate(-2px, -2px);
+      box-shadow: 5px 5px 0 rgba(58, 54, 50, 0.2);
+    }
+    
+    /* ============ FOOTER ============ */
+    .footer {
+      background: linear-gradient(180deg, #3A3632 0%, #1A1816 100%);
+      color: #EDE7D9;
+      padding: 80px 40px 40px;
+      margin-top: 100px;
+      border-top: 4px solid #B85C38;
+      position: relative;
+    }
+    
+    .footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: repeating-linear-gradient(90deg, #B85C38, #B85C38 15px, transparent 15px, transparent 20px);
+    }
+    
+    .footer__container {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    
+    .footer__logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+    
+    .footer__logo-icon {
+      width: 50px;
+      height: 50px;
+      border: 2px dashed #B85C38;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 30px;
+      font-weight: 900;
+      color: #B85C38;
+      background: rgba(184, 92, 56, 0.1);
+    }
+    
+    .footer__logo-text {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    
+    .footer__tagline {
+      font-family: 'Crimson Pro', serif;
+      font-size: 16px;
+      font-style: italic;
+      color: #B8B3A8;
+      margin-bottom: 30px;
+    }
+    
+    .footer__nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+    
+    .footer__nav-link {
+      font-family: 'Crimson Pro', serif;
+      font-size: 16px;
+      color: #D4C5B0;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .footer__nav-link:hover {
+      color: #B85C38;
+    }
+    
+    .footer__legal {
+      border-top: 2px dashed #6B6760;
+      padding-top: 30px;
+      margin-top: 30px;
+    }
+    
+    .footer__legal-title {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      letter-spacing: 3px;
+      color: #B85C38;
+      margin-bottom: 16px;
+    }
+    
+    .footer__legal-text {
+      font-family: 'Crimson Pro', serif;
+      font-size: 14px;
+      color: #B8B3A8;
+      line-height: 1.8;
+      margin-bottom: 8px;
+    }
+    
+    .footer__copyright {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      color: #6B6760;
+      margin-top: 30px;
+    }
+    
+    /* ============ RESPONSIVE ============ */
+    @media (max-width: 768px) {
+      .header {
+        padding: 16px 20px;
+      }
+      
+      .header__logo-text {
+        font-size: 24px;
+      }
+      
+      .back-link {
+        margin: 20px;
+      }
+      
+      .article-page {
+        padding: 0 20px 60px;
+      }
+      
+      .article-hero__image {
+        height: 280px;
+      }
+      
+      .article-hero__caption {
+        left: 15px;
+        padding: 12px 16px;
+      }
+      
+      .article-section__content,
+      .article-intro {
+        padding: 25px 20px;
+      }
+      
+      .footer {
+        padding: 60px 20px 40px;
+      }
+      
+      .footer__nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header__container">
+      <a href="../index.html" class="header__logo" aria-label="Retour à l'accueil">
+        <div class="header__logo-icon">T</div>
+        <span class="header__logo-text">TU <span class="header__logo-text-accent">YOUYOU</span></span>
+      </a>
+      <button class="header__burger" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </button>
+    </div>
+  </header>
+  
+  <!-- NAVIGATION OVERLAY -->
+  <div class="nav-overlay" id="navOverlay"></div>
+  
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav" aria-label="Navigation principale">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="../index.html" class="nav__link"><span class="nav__number">01.</span> Accueil</a>
+      </li>
+      <li class="nav__item">
+        <a href="../a-propos.html" class="nav__link"><span class="nav__number">02.</span> À Propos</a>
+      </li>
+      <li class="nav__item">
+        <a href="../glossaire.html" class="nav__link"><span class="nav__number">03.</span> Glossaire</a>
+      </li>
+      <li class="nav__item">
+        <a href="../contact.html" class="nav__link"><span class="nav__number">04.</span> Contact</a>
+      </li>
+      <li class="nav__item">
+        <a href="../autres-projets.html" class="nav__link"><span class="nav__number">05.</span> Autres Projets</a>
+      </li>
+    </ul>
+  </nav>
+  
+  <!-- BACK BUTTON -->
+  <a href="../index.html" class="back-link">← Retour</a>
+  
+  <!-- MAIN CONTENT -->
+  <main class="article-page">
+    
+    <!-- HERO IMAGE -->
+    <section class="article-hero">
+      <img src="../images/8c8cd16ed79dc486ae40d2f4a850836f7d92a8f1.png" alt="Portrait de Tu Youyou dans son laboratoire" class="article-hero__image">
+      <div class="article-hero__caption">
+        <p class="article-hero__caption-title">Portrait de Tu Youyou</p>
+        <p class="article-hero__caption-text">Une vie dédiée à la science et à l'humanité</p>
+      </div>
+    </section>
+    
+    <!-- INTRO -->
+    <div class="article-intro">
+      <p>Tu Youyou, née le 30 décembre 1930 à Ningbo en Chine, est une scientifique chinoise spécialisée en pharmacologie et médecine traditionnelle chinoise. Elle est la première femme chinoise à recevoir le Prix Nobel de physiologie ou médecine en 2015.</p>
+    </div>
+    
+    <!-- SECTION 1 -->
+    <section class="article-section">
+      <img src="../images/b3ab6310477dd0ef7f2946e5387847626ffb05b5.png" alt="Plante d'armoise annuelle" class="article-section__image">
+      <div class="article-section__content">
+        <span class="article-section__number">1</span>
+        <h2 class="article-section__title">Enfance et formation</h2>
+        <p class="article-section__text">Née dans une famille modeste, Tu Youyou a grandi pendant une période tumultueuse de l'histoire chinoise. Malgré les difficultés, elle a montré très tôt un intérêt prononcé pour les sciences naturelles et la médecine. Elle a étudié la pharmacologie à l'Université de Pékin, obtenant son diplôme en 1955.</p>
+      </div>
+    </section>
+    
+    <!-- SECTION 2 -->
+    <section class="article-section">
+      <img src="../images/18e1d59529b9052bdb9fefada59eb3f3d060b8de.png" alt="Recherche sur l'artémisinine" class="article-section__image">
+      <div class="article-section__content">
+        <span class="article-section__number">2</span>
+        <h2 class="article-section__title">La découverte révolutionnaire</h2>
+        <p class="article-section__text">Dans les années 1960, face à la montée de la résistance du paludisme aux traitements conventionnels, Tu Youyou a dirigé une équipe pour rechercher de nouveaux remèdes dans la médecine traditionnelle chinoise. Après avoir examiné plus de 2000 recettes traditionnelles et testé plus de 380 extraits de plantes, elle a identifié l'Artemisia annua (armoise annuelle) comme source prometteuse.</p>
+      </div>
+    </section>
+    
+    <!-- SECTION 3 -->
+    <section class="article-section">
+      <img src="../images/a79c571b07efa9ff77489b28e04b8c7ce85dd484.png" alt="Prix Nobel de médecine" class="article-section__image">
+      <div class="article-section__content">
+        <span class="article-section__number">3</span>
+        <h2 class="article-section__title">Le Prix Nobel</h2>
+        <p class="article-section__text">En 2015, Tu Youyou a reçu le Prix Nobel de physiologie ou médecine pour sa découverte de l'artémisinine, un traitement révolutionnaire contre le paludisme. Cette reconnaissance internationale a non seulement honoré ses décennies de travail acharné, mais a également mis en lumière l'importance de la médecine traditionnelle chinoise dans la recherche moderne.</p>
+      </div>
+    </section>
+    
+    <!-- QUOTE -->
+    <blockquote class="article-quote">
+      <p>"La découverte de l'artémisinine a sauvé des millions de vies et a prouvé que la médecine traditionnelle peut offrir des solutions aux défis modernes."</p>
+    </blockquote>
+    
+  </main>
+  
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__logo">
+        <div class="footer__logo-icon">T</div>
+        <span class="footer__logo-text">TU YOUYOU</span>
+      </div>
+      <p class="footer__tagline">Projet pédagogique MMI</p>
+      
+      <nav class="footer__nav">
+        <a href="../a-propos.html" class="footer__nav-link">À propos</a>
+        <a href="../contact.html" class="footer__nav-link">Contact</a>
+        <a href="../glossaire.html" class="footer__nav-link">Glossaire</a>
+      </nav>
+      
+      <div class="footer__legal">
+        <p class="footer__legal-title">MENTIONS LÉGALES</p>
+        <p class="footer__legal-text"><strong>Éditeur :</strong> Jehat Bakiray</p>
+        <p class="footer__legal-text"><strong>Établissement :</strong> MMI Belfort-Montbéliard</p>
+        <p class="footer__legal-text"><strong>Année :</strong> 2024-2025</p>
+        <p class="footer__legal-text" style="margin-top: 16px; font-size: 13px;">Projet réalisé dans le cadre du cours de MMI sur "L'effet Matilda".</p>
+        <p class="footer__legal-text" style="font-size: 13px;">Ce site est à vocation pédagogique et non commerciale.</p>
+      </div>
+      
+      <p class="footer__copyright">© 2025 Tu Youyou - Projet Bakiray</p>
+    </div>
+  </footer>
+  
+  <!-- SCRIPT -->
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const nav = document.getElementById('nav');
+    const navOverlay = document.getElementById('navOverlay');
+    
+    menuBtn.addEventListener('click', () => {
+      nav.classList.toggle('nav--visible');
+      navOverlay.classList.toggle('nav-overlay--visible');
+      menuBtn.setAttribute('aria-expanded', nav.classList.contains('nav--visible'));
+    });
+    
+    navOverlay.addEventListener('click', () => {
+      nav.classList.remove('nav--visible');
+      navOverlay.classList.remove('nav-overlay--visible');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    });
+  </script>
+</body>
+</html>
